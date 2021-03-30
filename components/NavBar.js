@@ -22,7 +22,7 @@ const NavBar = () => {
         light={true}
         color="light"
         fixed="top"
-        className="shadow"
+        className="shadow mb-5"
       >
         <Container>
           <NavbarBrand href="#">The Craft Taco Truck</NavbarBrand>
@@ -40,8 +40,13 @@ const NavBar = () => {
                 </Link>
               </NavItem>
               <NavItem>
-                <Link href="/" passHref>
+                <Link href="/contact" passHref>
                   <NavLink>Contact</NavLink>
+                </Link>
+              </NavItem>
+              <NavItem>
+                <Link href="/team" passHref>
+                  <NavLink>The Team</NavLink>
                 </Link>
               </NavItem>
             </Nav>

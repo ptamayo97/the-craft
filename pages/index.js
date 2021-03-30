@@ -1,15 +1,31 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import styles from "../styles/Home.module.css";
+import Hero from "../components/Hero";
+import { Container, Row, Col } from "reactstrap";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
-        <title>Create Next App</title>
+        <title>The Craft Taco Truck</title>
+
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      {/* <Hero>
+        <img width="12%" src="/images/website.png" alt="Card image cap" />
+      </Hero> */}
+      <img width="100%" src="/images/yummy.jpg" alt="Card image cap" />
 
-      <main className={styles.main}>
+      <Container>
+        {/* <div
+        style={{
+          backgroundImage: `/images/yummy.jpg`,
+          height: "100%",
+        }}
+      >
+        adsfasdfasdfasdfasdf
+      </div> */}
+        {/* <main className={styles.main}>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
@@ -48,7 +64,8 @@ export default function Home() {
             </p>
           </a>
         </div>
-      </main>
+      </main> */}
+      </Container>
 
       <footer className={styles.footer}>
         <a
@@ -56,10 +73,10 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
+          {/* Powered by{" "}
+          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} /> */}
         </a>
       </footer>
     </div>
-  )
+  );
 }
