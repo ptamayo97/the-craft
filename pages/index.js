@@ -1,82 +1,73 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Hero from "../components/Hero";
-import { Container, Row, Col } from "reactstrap";
+import Feed from "react-instagram-authless-feed";
+import { Container, Row, Col, Jumbotron } from "reactstrap";
 
 export default function Home() {
   return (
-    <div>
+    <div className={styles.dark}>
       <Head>
         <title>The Craft Taco Truck</title>
 
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/small_logo.jpeg" />
       </Head>
       {/* <Hero>
         <img width="12%" src="/images/website.png" alt="Card image cap" />
       </Hero> */}
-      <img width="100%" src="/images/yummy.jpg" alt="Card image cap" />
 
-      <Container>
-        {/* <div
-        style={{
-          backgroundImage: `/images/yummy.jpg`,
-          height: "100%",
-        }}
-      >
-        adsfasdfasdfasdfasdf
-      </div> */}
-        {/* <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+      <div className="mt-5 pt-5">
+        <Container className=" pt-5">
+          <Jumbotron className={styles.ivory}>
+            <Row className="lead">
+              <Col>
+                <p className="text-center">
+                  Our mission at The Craft Taco Truck is building hand-crafted
+                  products with authenticity, honesty, and originality.
+                </p>
+              </Col>
+            </Row>
+            <Row>
+              <Col>
+                <img width="100%" src="/images/yummy.jpg" alt="tacos" />
+              </Col>
+            </Row>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+            <Row className="mt-5">
+              <Col sm="12" md={{ size: 12 }}>
+                <iframe
+                  src="https://www.google.com/calendar/embed?color=%239fe1e7&deb=-&embed_style=WyJhdDplbWI6c3QiLCIjZTBlMGUwIiwiI2VkZWRlZCIsIiM0MTg0ZjMiLCJyb2JvdG8iLCIjNjM2MzYzIiw1MDAsIiNmZmYiXQo&eopt=0&mode=agenda&showCalendars=1&showPrint=0&showTitle=0&showTz=0&src=thecraft@thecrafttacotruck.com"
+                  // style="border:solid 1px #777"
+                  width="100%"
+                  height="500"
+                  frameborder="0"
+                  scrolling="no"
+                ></iframe>
+              </Col>
+            </Row>
+          </Jumbotron>
+          {/* <Row>
+            <Col>
+              <Feed
+                userName="thecrafttacotruck"
+                className="col"
+                classNameLoading="Loading"
+                limit="3"
+              />
+            </Col>
+          </Row> */}
+        </Container>
+      </div>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main> */}
-      </Container>
-
-      <footer className={styles.footer}>
+      {/* <footer className={styles.footer}>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
           rel="noopener noreferrer"
         >
-          {/* Powered by{" "}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} /> */}
+          
         </a>
-      </footer>
+      </footer> */}
     </div>
   );
 }
