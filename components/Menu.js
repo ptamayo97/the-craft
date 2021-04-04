@@ -17,7 +17,7 @@ const Menu = (props) => {
       </Row>
       {props.menu.map((item) => (
         <Row className="mb-3">
-          <Col>
+          <Col xs={5}>
             <img
               src={item.image}
               alt=""
@@ -28,14 +28,17 @@ const Menu = (props) => {
               }}
             />
           </Col>
-          <Col>
+          <Col xs={7}>
             <h3>{item.category}</h3>
             <Container>
               {item.items.map((food) => (
                 <Row>
-                  <Col>{food.price}</Col>
-                  <Col>{food.name}</Col>
+                  <Col xs={6}>{food.price}</Col>
+                  <Col xs={6}>{food.name}</Col>
                 </Row>
+                // <p>
+                //   {food.price} {food.name}
+                // </p>
               ))}
             </Container>
           </Col>
