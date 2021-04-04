@@ -5,7 +5,7 @@ import NavBar from "./NavBar";
 export class Layout extends Component {
   render() {
     return (
-      <div className="dark mt-5">
+      <div className="dark">
         <NavBar />
         {this.props.children}
       </div>
