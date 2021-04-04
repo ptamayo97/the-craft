@@ -272,7 +272,12 @@ class Home extends Component {
           <Jumbotron className={styles.ivory}>
             <Row>
               <Col className="d-flex justify-content-center">
-                <img src="/images/website.png" alt="" width={`50%`} />
+                <img
+                  src="/images/website.png"
+                  alt=""
+                  width={`50%`}
+                  height={`50%`}
+                />
               </Col>
             </Row>
             <Row className="lead">
