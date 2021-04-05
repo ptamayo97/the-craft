@@ -270,7 +270,7 @@ class menu extends Component {
       //   </Row>
 
       // </Container>
-      <div>
+      <div style={{ color: "#d9d9d9" }}>
         <Head>
           <title>The Craft Taco Truck | Menu</title>
 
