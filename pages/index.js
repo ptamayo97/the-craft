@@ -119,7 +119,7 @@ class Home extends Component {
       },
       {
         category: "Salads",
-        image: "https://via.placeholder.com/542",
+        image: "/images/salad.jpg",
         items: [{ name: "Caesar  | Add-ons: $5 any protein ", price: "7.00" }],
       },
       {

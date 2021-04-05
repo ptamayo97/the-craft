@@ -117,7 +117,7 @@ class menu extends Component {
       },
       {
         category: "Salads",
-        image: "https://via.placeholder.com/542",
+        image: "/images/salad.jpg",
         items: [{ name: "Caesar  | Add-ons: $5 any protein ", price: "7.00" }],
       },
       {
@@ -270,14 +270,14 @@ class menu extends Component {
       //   </Row>
 
       // </Container>
-      <Fragment>
+      <div>
         <Head>
           <title>The Craft Taco Truck | Menu</title>
 
           <link rel="icon" href="/images/small_logo.jpeg" />
         </Head>
         <Menu menu={this.state.menu} />
-      </Fragment>
+      </div>
     );
   }
 }
